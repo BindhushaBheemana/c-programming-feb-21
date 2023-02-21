@@ -1,0 +1,18 @@
+//ass-2 Write a program to print given number is Armstrong number or not
+#include<stdio.h>
+void main()
+{
+	int n,rem,dup=0,temp;
+	scanf("%d",&n);
+	temp=n;
+	while(n!=0)
+	{
+		rem=n%10;
+		dup=dup+rem*rem*rem;
+		n=n/10;	
+	}
+	if(dup==temp)
+	printf("It is a armstrong number");
+	else
+	printf("It is not a armstrong number");
+}
