@@ -1,0 +1,19 @@
+//ass1-Write a program to print given number is palindrome or not
+#include<stdio.h>
+void main()
+{
+	int n,temp,rev=0,rem;
+	scanf("%d",&n);
+	temp=n;
+	while(n!=0)
+	{
+		rem=n%10;//5,2,5
+		rev=rev*10+rem;//5,52,5
+		n=n/10;//52,5,0
+	}
+	if(temp==rev)
+	printf("It is a palindrome");
+	else 
+	printf("It is not a palindrome");
+}
+
